@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conventions Health</title>
+  <style>
+    body {
+      margin: 0px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+    .logoImage {
+      width: 100%;
+      min-width: 350px;
+      height: auto;
+      max-width: 600px;
+    }
+    .logo {
+      width: 400px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+    .logos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 8em;
+      width: 1000px;
+    }
+    @media only screen and (max-width: 768px) {
+      .logoImage {
+        display: grid;
+        align-items: center;
+        justify-self: center;
+        width: 350px;
+      }
+      .logos {
+        grid-template-columns: 1fr;
+        grid-gap: 3em;
+        width: 100%;
+      }
+      a {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+      }
+    }
+    .page {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+    }
+    .body {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      height: 72vh;
+      background-color: white;
+    }
+    .header {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      height: 28vh;
+      width: 100vw;
+      /* background-color: #f6f6f6; */
+      border-bottom: 1px solid rgb(170, 170, 170);
+    }
+    .header .logo {
+      width: 540px
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <img class="logoImage" src="./images/health.png" alt="logo">
+    </div>
+    <div class="body">
+      <div class="logos-container">
+        <div class="logos">
+          <a href="https://conventionspc.com"><img class="logoImage" src="./images/pc.jpg" alt="logo"></a>
+          <a href="https://conventionstms.com"><img class="logoImage" src="./images/tms.jpg" alt="logo"></a>
+          <a href="https://amrconventions.com"><img class="logoImage" src="./images/amr.jpg" alt="logo"></a>
+          <a href="https://nwlcs.com"><img class="logoImage" src="./images/nwl.jpg" alt="logo"></a>
+        </div>
+        <a href="https://nwlcs.com"><img class="logoImage" src="./images/wellness.png" alt="logo"></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
